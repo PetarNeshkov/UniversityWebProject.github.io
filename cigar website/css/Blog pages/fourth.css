@@ -1,0 +1,145 @@
+:root{
+    --main-color:#d3ad7f;
+    --black:#13131a;
+    --bg:#010103;
+    --border:.1rem solid rgba(255,255,255,.3);
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+    height: 100%;
+}
+
+html::-webkit-scrollbar{
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: #fff;
+    border-radius: 5rem;
+}
+
+body{
+    background: var(--bg) !important;
+}
+
+section{
+    padding:2rem 7%;
+}
+.heading{
+    text-align: center;
+    color:#fff;
+    text-transform: uppercase;
+    padding-bottom: 3.5rem;
+    font-size: 4rem;
+}
+
+.heading span{
+    color:var(--main-color);
+    text-transform: uppercase;
+}
+
+.fourthblog .box-container .box{
+    display: flex;
+    justify-content: space-around;
+}
+
+.fourthblog .box-container .box2{
+    display: flex;
+    justify-content: space-around;
+}
+
+.fourthblog .box-container .box img{
+    margin: 1rem;
+    width: 70%;
+    height: 50rem;
+}
+
+.fourthblog .box-container .box:hover img{
+    border: 3px solid black;
+}
+
+.fourthblog .box-container .text{
+    width: 64%;
+    margin-left: 24rem !important;
+    margin: 3rem;
+    color: #fff;
+    font-size: medium;
+}
+
+.btn2{
+    margin-top: 1rem;
+    display: inline-block;
+    padding:.9rem 3rem;
+    font-size: 1.7rem;
+    color:#fff;
+    background: var(--main-color);
+    cursor: pointer;
+    margin-left: 60rem;
+    text-decoration: none;
+}
+
+.btn2:hover{
+    letter-spacing: .2rem;
+    color:#fff;
+}
+
+.styled-table {
+    border-collapse: collapse;
+   margin-left: -9rem;
+    font-size: 1.2em;
+    font-family: 'Roboto', sans-serif;
+    width: 100rem;
+    border:1 px solid white;
+}
+
+.styled-table thead tr {
+    background-color: wheat;
+    color: #000000;
+    text-align: left;
+    
+}
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+    border: 1px solid white;
+}
+
+@media (max-width:768px){
+
+    #menu-btn{
+        display: inline-block;
+    }
+
+    .header .navbar{
+        position: absolute;
+        top:100%; right: -100%;
+        background: #fff;
+        width: 30rem;
+        height: calc(100vh - 9.5rem);
+    }
+
+    .header .navbar.active{
+        right:0;
+    }
+
+    .header .navbar a{
+        color:var(--black);
+        display: block;
+        margin:1.5rem;
+        padding:.5rem;
+        font-size: 2rem;
+    }
+
+    .fourthblog{
+        background-position: left;
+        justify-content: center;
+        text-align: center;
+    }
+}
